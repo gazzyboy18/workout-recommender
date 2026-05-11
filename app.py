@@ -1,5 +1,7 @@
 import streamlit as st
 import random
+import os
+from PIL import Image
 
 # ---------------------------------------------------------
 # QUESTION OPTIONS
@@ -47,8 +49,7 @@ IMAGE_MAP = {
     "boxjump": "images/boxjump.jpg"
 }
 
-import os
-from PIL import Image
+
 
 FALLBACK_IMAGE = "images/childpose.jpg"
 
@@ -143,8 +144,8 @@ ROUTINE_POOL = {
                 ("5–6 rounds", IMAGE_MAP["burpee"])
             ],
             [
-                ("45 sec work → 15 sec rest", IMAGE_MAP["jump_squat"]),
-                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["skater"]),
+                ("45 sec work → 15 sec rest", IMAGE_MAP["boxjump"]),
+                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["pushup"]),
                 ("6 rounds", IMAGE_MAP["skater"])
             ]
         ]
@@ -390,4 +391,4 @@ if st.session_state.scores is not None and st.session_state.best_type is not Non
 
         for step, img in routine:
             st.write(f"**{step}**")
-            st.image(img, width=250)
+            st.image(safe_image(img), width=250)
