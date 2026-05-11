@@ -122,8 +122,8 @@ ROUTINE_POOL = {
                 ("5–6 rounds", IMAGE_MAP["burpee"])
             ],
             [
-                ("45 sec work → 15 sec rest", IMAGE_MAP["boxjump"]),
-                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["pushup"]),
+                ("45 sec work → 15 sec rest", IMAGE_MAP["jump_squat"]),
+                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["skater"]),
                 ("6 rounds", IMAGE_MAP["skater"])
             ]
         ]
@@ -172,8 +172,57 @@ ROUTINE_POOL = {
                 ("Deep quad stretch – 2 min", IMAGE_MAP["quadstretch"])
             ]
         ]
+    },
+
+    "light_cardio": {
+        "Beginner": [
+            [
+                ("Brisk walk – 5 min", IMAGE_MAP["highknees"]),
+                ("Step jacks – 2 min", IMAGE_MAP["jump_squat"]),
+                ("March in place – 2 min", IMAGE_MAP["highknees"])
+            ]
+        ],
+        "Intermediate": [
+            [
+                ("Jog in place – 3 min", IMAGE_MAP["highknees"]),
+                ("Step jacks – 2 min", IMAGE_MAP["jump_squat"]),
+                ("Fast march – 2 min", IMAGE_MAP["highknees"])
+            ]
+        ],
+        "Advanced": [
+            [
+                ("Light jog – 5 min", IMAGE_MAP["sprint"]),
+                ("High knees – 2 min", IMAGE_MAP["highknees"]),
+                ("Jump rope (imaginary) – 2 min", IMAGE_MAP["jump_squat"])
+            ]
+        ]
+    },
+
+    "moderate_cardio": {
+        "Beginner": [
+            [
+                ("Fast walk – 5 min", IMAGE_MAP["highknees"]),
+                ("Step jacks – 3 min", IMAGE_MAP["jump_squat"]),
+                ("March in place – 2 min", IMAGE_MAP["highknees"])
+            ]
+        ],
+        "Intermediate": [
+            [
+                ("Jog – 5 min", IMAGE_MAP["sprint"]),
+                ("Jumping jacks – 2 min", IMAGE_MAP["jump_squat"]),
+                ("Mountain climbers – 1 min", IMAGE_MAP["mountainclimber"])
+            ]
+        ],
+        "Advanced": [
+            [
+                ("Run – 5 min", IMAGE_MAP["sprint"]),
+                ("Burpees – 1 min", IMAGE_MAP["burpee"]),
+                ("Jump squats – 1 min", IMAGE_MAP["jump_squat"])
+            ]
+        ]
     }
 }
+
 
 # ---------------------------------------------------------
 # SCORING ENGINE
