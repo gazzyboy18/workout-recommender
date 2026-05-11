@@ -47,6 +47,27 @@ IMAGE_MAP = {
     "boxjump": "images/boxjump.jpg"
 }
 
+import os
+from PIL import Image
+
+FALLBACK_IMAGE = "images/childpose.jpg"
+
+def safe_image(path):
+    """Return a valid image path or fallback if missing/unreadable."""
+    # File missing
+    if not os.path.exists(path):
+        st.warning(f"⚠️ Missing image: {path}. Using fallback.")
+        return FALLBACK_IMAGE
+
+    # File exists but unreadable
+    try:
+        Image.open(path)
+        return path
+    except Exception:
+        st.warning(f"⚠️ Unreadable image: {path}. Using fallback.")
+        return FALLBACK_IMAGE
+
+
 # ---------------------------------------------------------
 # ROUTINE POOL (WITH IMAGES)
 # ---------------------------------------------------------
