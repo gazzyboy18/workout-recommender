@@ -95,7 +95,7 @@ ROUTINE_POOL = {
             [
                 ("Lunges – 3×10", IMAGE_MAP["lunge"]),
                 ("Bench press or push‑ups – 3×10", IMAGE_MAP["pushup"]),
-                ("Romanian deadlifts – 3×10", IMAGE_MAP["rdl"])
+                ("Romanian deadlifts – 3×10", IMAGE_MAP["deadlift"])
             ]
         ],
         "Advanced": [
