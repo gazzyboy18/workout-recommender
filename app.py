@@ -122,8 +122,8 @@ ROUTINE_POOL = {
                 ("5–6 rounds", IMAGE_MAP["burpee"])
             ],
             [
-                ("45 sec work → 15 sec rest", IMAGE_MAP["jump_squat"]),
-                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["boxjump"]),
+                ("45 sec work → 15 sec rest", IMAGE_MAP["boxjump"]),
+                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["pushup"]),
                 ("6 rounds", IMAGE_MAP["skater"])
             ]
         ]
