@@ -43,7 +43,8 @@ IMAGE_MAP = {
     "spinaltwist": "images/spinaltwist.jpg",
     "frogpose": "images/frogpose.jpg",
     "pancake": "images/pancake.jpg",
-    "quadstretch": "images/quadstretch.jpg"
+    "quadstretch": "images/quadstretch.jpg",
+    "boxjump": "images/boxjump.jpg"
 }
 
 # ---------------------------------------------------------
@@ -122,7 +123,7 @@ ROUTINE_POOL = {
             ],
             [
                 ("45 sec work → 15 sec rest", IMAGE_MAP["jump_squat"]),
-                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["skater"]),
+                ("Box jumps / explosive push‑ups / skater jumps", IMAGE_MAP["boxjump"]),
                 ("6 rounds", IMAGE_MAP["skater"])
             ]
         ]
